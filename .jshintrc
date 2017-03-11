@@ -1,0 +1,14 @@
+
+{
+    "node" : true,
+    "browser" : true,
+    "jquery" : true,
+    "strict" : true,
+    "unused" : true,
+    "jasmine" : true,
+    "globals": {
+        "$": false,
+        "jQuery": false
+    }
+}
+
