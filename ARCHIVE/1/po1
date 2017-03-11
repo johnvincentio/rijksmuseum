@@ -1,0 +1,8 @@
+#
+# https://theysaidso.com/api/
+#
+# may be a limit of 10 per day
+#
+
+curl -v  -i -X GET http://quotes.rest/qod.json?category=inspire 
+

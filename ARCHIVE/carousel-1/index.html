@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Describe what the page is doing">
+        <meta name="keywords" content="load up keywords for search engines">
+        <meta name="author" content="John Vincent">
+        <title>Rijks Museum Guide</title>
+
+<!-- Steps
+1. Basic HTML - no semantics; skeleton.
+1. Proper tags; button,
+2. Semantic tags; Header, Nav, main, Section, Article, Aside, Footer, figure, figcaption
+3. Roles; ContentInfo, PresentationInfo, Search,
+4. Choose fonts
+5. font-size
+5a. font-weight;
+6. microdata
+7. favicon
+
+10. mobile nav icon
+
+15. waypoints
+
+20. google analytics
+
+60. test all links
+
+70. chmod 644 files, 755 directories
+71. fix quarantined files
+ls -la
+-rw-------@ 1 jv  staff    18K Oct  7 11:15 logo.png
+To remove the quarantine:
+xattr -dr com.apple.quarantine logo.png
+
+
+100. push to Github Pages
+-->
+
+<!-- HTML5 Semantics: http://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+<!-- Check HTML5 semantics: https://gsnedders.html5.org/outliner/ -->
+
+<!-- for microdata usage: http://schema.org/ -->
+<!--
+itemscope itemtype="http://schema.org/JobPosting"
+itemprop="datePosted">June 22
+itemprop="title">Technical Project Manager
+itemprop="jobLocation">Midtown East
+-->
+
+<!-- Google Structured Data Testing Tool: https://search.google.com/structured-data/testing-tool/u/0/ -->
+
+<!-- for ARIA in HTML: https://www.w3.org/TR/html-aria/ -->
+
+<!-- for favicon generator; http://realfavicongenerator.net/
+use: /resources/favicons
+-->
+<!-- look up your libs
+https://cdnjs.com/
+-->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- choose which one -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+<!-- load Google fonts: https://fonts.google.com -->
+        <link href="https://fonts.google.com/?selection.family=Roboto:300,400,500" rel="stylesheet">
+
+<!-- load my own stylesheets -->
+        <link rel="stylesheet" href="resources/css/float_grid.css">
+        <link rel="stylesheet" href="resources/css/main.css">
+
+<!-- insert favicon generator code here -->
+
+    <style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: auto;
+    }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="#">
+                <h1>Rijks Museum Collection</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a class="js--nav-home" href="#">Home</a></li>
+                    <li><a class="js--nav-events" href="#">Events</a></li>
+                    <li><a class="js--nav-aboutus" href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="js--carousel">
+<!--<div class="container">-->
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="images/img_chania.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img_chania2.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img_flower.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/img_flower2.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<!--</div>-->
+            </section>
+
+            <section class="js--search-sort"></section>
+
+            <section class="js--events"></section>
+
+            <section class="js--details"></section>
+
+            <section class="js--collection"></section>
+
+            <section class="js--aboutus"></section>
+        </main>
+
+        <footer>
+            <div>
+                <p>Copyright &copy; 2016</p>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.8/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="resources/js/keys.js"></script>
+        <script src="resources/js/utils.js"></script>
+<!--
+        <script src="resources/js/models/carousel.js"></script>
+        <script src="resources/js/views/carousel.js"></script>
+-->
+        <script src="resources/js/models/collection.js"></script>
+        <script src="resources/js/views/collection.js"></script>
+        <script src="resources/js/models/details.js"></script>
+        <script src="resources/js/views/details.js"></script>
+        <script src="resources/js/models/events.js"></script>
+        <script src="resources/js/views/events.js"></script>
+        <script src="resources/js/app.js"></script>
+
+    </body>
+</html>

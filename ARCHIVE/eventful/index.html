@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Describe what the page is doing">
+        <meta name="keywords" content="load up keywords for search engines">
+        <meta name="author" content="John Vincent">
+        <title>ADD TITLE</title>
+
+<!-- Steps
+1. Basic HTML - no semantics; skeleton.
+1. Proper tags; button,
+2. Semantic tags; Header, Nav, main, Section, Article, Aside, Footer, figure, figcaption
+3. Roles; ContentInfo, PresentationInfo, Search,
+4. Choose fonts
+5. font-size
+5a. font-weight;
+
+70. chmod 644 files, 755 directories
+71. fix quarantined files
+ls -la
+-rw-------@ 1 jv  staff    18K Oct  7 11:15 logo.png
+To remove the quarantine:
+xattr -dr com.apple.quarantine logo.png
+
+-->
+
+<!-- HTML5 Semantics: http://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+<!-- Check HTML5 semantics: https://gsnedders.html5.org/outliner/ -->
+
+<!-- for microdata usage: http://schema.org/ -->
+<!--
+itemscope itemtype="http://schema.org/JobPosting"
+itemprop="datePosted">June 22
+itemprop="title">Technical Project Manager
+itemprop="jobLocation">Midtown East
+-->
+
+<!-- Google Structured Data Testing Tool: https://search.google.com/structured-data/testing-tool/u/0/ -->
+
+<!-- for ARIA in HTML: https://www.w3.org/TR/html-aria/ -->
+
+<!-- for favicon generator; http://realfavicongenerator.net/
+use: /resources/favicons
+-->
+<!-- look up your libs
+https://cdnjs.com/
+-->
+
+<!-- choose which one -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+<!-- load Google fonts: https://fonts.google.com -->
+        <link href="https://fonts.google.com/?selection.family=Roboto:300,400,500" rel="stylesheet">
+
+<!-- sass usage
+cd resources
+sass --watch scss:css --style expanded
+-->
+
+<!-- load my own stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+
+<!-- load vendor javascript libraries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Test harness for API testing 5</h1>
+        </header>
+        <main>
+            <div class="js--show-data">
+
+            </div>
+        </main>
+        <script src="js/model.js"></script>
+        <script src="js/views.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,305 @@
+
+%textOverflow
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ----------------------------------- */
+/* Basic setup */
+/* ----------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;  /* choose a font */
+}
+
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+@import "_float_grid";
+
+/* ----------------------------------- */
+/* Reusable components */
+/* ----------------------------------- */
+
+.center {
+    text-align: center;
+}
+
+/* ----------------------------------- */
+/* Header */
+/* ----------------------------------- */
+
+header {
+    position: fixed;
+    background-color: #eeeeee;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #dde7e9;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-left: 15px;
+            color: black;
+            width: 450px;
+        }
+    }
+}
+
+header nav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    ul li {
+        display: inline-block;
+        margin: 10px 7px;
+        a {
+            font-weight: 500;
+            color: purple;
+
+            &:hover {
+                color: blue;
+                font-size: 120%;
+            }
+        }
+    }
+}
+
+/* ----------------------------------- */
+/* Main Image Section */
+/* ----------------------------------- */
+
+.main-image {
+    margin: 65px 5px 25px 5px;
+    img {
+        width: 100%;
+    }
+}
+
+/* ----------------------------------- */
+/* Collection section */
+/* ----------------------------------- */
+
+.box {
+    border: 1px solid lightgray;
+    margin-bottom: 100px;
+    width: 250px;
+    height: 250px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+//        height: auto;
+        vertical-align: top;
+        &:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            cursor: pointer;
+            opacity: 0.3;
+        }
+    }
+}
+
+.caption {
+    h2 {
+        font-weight: 400;
+        font-size: 15px;
+        @extend %textOverflow;
+    }
+    p {
+        font-weight: 700;
+        font-size: 17px;
+    }
+}
+
+/*
+figcaption {
+    padding-bottom: 6px;
+    padding-left: 15px;
+    margin: 20px 0 20px 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+*/
+
+/*
+figcaption p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 19px;
+}
+*/
+
+
+
+/* ----------------------------------- */
+/* Responsive */
+/* ----------------------------------- */
+
+
+
+/* Non-mobile, grid */
+
+@media only screen and (min-width: 640px) {
+
+}
+
+/*
+@media only screen and (orientation: landscape) {
+*/
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {/*--- Mobile portrait ---*/}
+@media only screen and (min-width : 480px) and (max-width : 595px) {/*--- Mobile landscape ---*/}
+@media only screen and (min-width : 595px) and (max-width : 690px) {/*--- Small tablet portrait ---*/}
+@media only screen and (min-width : 690px) and (max-width : 800px) {/*--- Tablet portrait ---*/}
+@media only screen and (min-width : 800px) and (max-width : 1024px) {/*--- Small tablet landscape ---*/}
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {/*--- Tablet landscape --- */}
+@media only screen and (min-width : 1224px) {/*--- Laptop --- */}
+@media only screen and (min-width : 1824px) {/*--- Large Screen --- */}
+
+
+/* Big tablet to 1200px (widths smaller than 1140px row) */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-color: darkorange;
+    }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    body {
+        background-color: chartreuse;
+    }
+}
+
+/* Small phones to small tablets; from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: beige;
+    }
+}
+
+/* Small phones from 0 to 480px  */
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+
+
+/*
+@import "_variables.scss";
+@import "_nav.scss";
+@import "_mixins.scss";
+@import "_placeholders.scss";
+@import "_functions.scss";
+
+#header {
+    height: $header-height;
+}
+h1 {
+   font-size: $header-size;
+   color: $header-color;
+}
+
+h2 {
+   font-size: $header-size - 7px;
+   color: $header-color;
+}
+
+a {
+    color: $link-color;
+}
+
+p {
+    width: 200px;
+    height: 50px;
+    @extend %textOverflow;
+    @include horizontalGradient(#FFC, #000);
+    clear: left;
+    @extend %center;
+}
+
+ .image {
+
+     float: left;
+
+     background-color: #ececec;
+     border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+
+     @media (max-width: 640px)
+     {
+         @include generateRow(2, 8%);
+     }
+     @media (min-width: 641px) and (max-width: 1200px)
+     {
+         @include generateRow(4, 3%);
+     }
+     @media (min-width: 1201px)
+     {
+         @include generateRow(5, 2%);
+     }
+
+     box-sizing: border-box;
+     img
+     {
+         width: 100%;
+     }
+     .image-description
+     {
+         color: #555;
+     }
+ }
+*/
+
+/*
+@include small-box(red);
+@include small-box(pink);
+@include small-box(yellow);
+@include small-box(black);
+
+*/

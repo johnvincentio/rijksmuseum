@@ -1,0 +1,331 @@
+HTTP/1.1 200 OK
+Date: Wed, 23 Nov 2016 00:00:46 GMT
+Cache-Control: no-store, must-revalidate, no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+X-Frame-Options: DENY
+Content-Length: 12808
+
+﻿{
+  "elapsedMilliseconds": 319,
+  "count": 576771,
+  "artObjects": [
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/BK-18305",
+        "web": "https://www.rijksmuseum.nl/en/collection/BK-18305"
+      },
+      "id": "en-BK-18305",
+      "objectNumber": "BK-18305",
+      "title": "Portrait of Andries de Graeff",
+      "hasImage": true,
+      "principalOrFirstMaker": "Artus Quellinus (I)",
+      "longTitle": "Portrait of Andries de Graeff, Artus Quellinus (I), 1661",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "876923e7-ee7b-4339-b3f5-5f24f2788f1d",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 26,
+        "width": 2085,
+        "height": 2500,
+        "url": "http://lh5.ggpht.com/Dm4qOkEfe0P9YqnN7s-KRxy6K_o4trePSnlVvGNg0TPGcKmiDS_sdmqqbSeSENg22FFjyIz0xI2CEJhkrk9IfmDYHwo=s0"
+      },
+      "headerImage": {
+        "guid": "1d449c5c-2ea9-4e29-bb4f-161ad61a3094",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh5.ggpht.com/857ue3MkLXfJLhmfO5M9kyyB7rXZ65RmagZgmJr2TG2JFshbBVwJdw7IrzU_PL1CuyPAgkRUPA_1yQrdzRkudUFlFvw=s0"
+      },
+      "productionPlaces": [
+        "Amsterdam"
+      ]
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/BK-NM-13150",
+        "web": "https://www.rijksmuseum.nl/en/collection/BK-NM-13150"
+      },
+      "id": "en-BK-NM-13150",
+      "objectNumber": "BK-NM-13150",
+      "title": "Portrait of Michiel de Ruyter",
+      "hasImage": true,
+      "principalOrFirstMaker": "Rombout Verhulst",
+      "longTitle": "Portrait of Michiel de Ruyter, Rombout Verhulst, 1677 - 1681",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "dfb56cbe-6e82-4f6f-aa7a-b560ed91f07f",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 2083,
+        "height": 2500,
+        "url": "http://lh3.ggpht.com/7eeRiDQLguCwPA7159-wn9Jd3AhGzmFzra0kda7SX5Vm1TqTW3sLf6UksceWq6MUJmrUSxVC5bCviXAMX1S0qd0lUi0=s0"
+      },
+      "headerImage": {
+        "guid": "c8b8814f-6a3f-429d-a2fd-2d0b2380b278",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh4.ggpht.com/7MNqSPsON_nuBu8FTQ8E-NpALOtbUgfEoyrJV7efW86Pxo_SuueubQmqy46jtWZYU9SiHLohb5elAoRbf9KvJ4cuJg=s0"
+      },
+      "productionPlaces": []
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/BK-NM-1010",
+        "web": "https://www.rijksmuseum.nl/en/collection/BK-NM-1010"
+      },
+      "id": "en-BK-NM-1010",
+      "objectNumber": "BK-NM-1010",
+      "title": "Dolls’ house of Petronella Oortman",
+      "hasImage": true,
+      "principalOrFirstMaker": "anonymous",
+      "longTitle": "Dolls’ house of Petronella Oortman, anonymous, c. 1686 - c. 1710",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "8c3131da-1405-426f-9b23-5671a93920af",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 33,
+        "width": 2500,
+        "height": 2266,
+        "url": "http://lh3.ggpht.com/OIaBDlLOhgpAQHGdfYfIh0ygXRqgBNR-tW7se4OTwOtD6dsr6xLAmp8u_pfsqJ-0EqB_wbCF_0mvCl979lWxfFIyFQQ=s0"
+      },
+      "headerImage": {
+        "guid": "fde471c0-800c-4bea-b28e-a8523a1b643f",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh3.ggpht.com/QARSFMHdk59lhi0GnyZzxvqkt3rMLpYrBI8dXqEVjnbLgcb4PudxSzYaLxju5Juo4CzwwSC2wlq2ZDUMXw54tIhgmF0=s0"
+      },
+      "productionPlaces": [
+        "Amsterdam"
+      ]
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/SK-C-1368",
+        "web": "https://www.rijksmuseum.nl/en/collection/SK-C-1368"
+      },
+      "id": "en-SK-C-1368",
+      "objectNumber": "SK-C-1368",
+      "title": "Portraits of Giuliano and Francesco Giamberti da Sangallo",
+      "hasImage": true,
+      "principalOrFirstMaker": "Piero di Cosimo",
+      "longTitle": "Portraits of Giuliano and Francesco Giamberti da Sangallo, Piero di Cosimo, 1482 - 1485",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "e68b810a-1d70-49e0-a210-5eb7b28a38aa",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 2143,
+        "height": 1520,
+        "url": "http://lh4.ggpht.com/NwCWmjro4h__Ord5RqicIJsJbTY104UditPHR-swB9a7pQRt67KfneX_tBEazLnkNGsWqCvfsZam8Pxj1Ixiqbne7Q=s0"
+      },
+      "headerImage": {
+        "guid": "76249f29-b230-41ac-aa38-1dcb8476b614",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1919,
+        "height": 459,
+        "url": "http://lh3.ggpht.com/SrQyX91YKAnkasml0c2lVgz9OT4wJXl_tqfZrb4kbKbLov7-qNOerp-w_lc75g3e1aQV_UAUrTzAfROdi_QqYNdM2XQ=s0"
+      },
+      "productionPlaces": []
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/SK-C-5",
+        "web": "https://www.rijksmuseum.nl/en/collection/SK-C-5"
+      },
+      "id": "en-SK-C-5",
+      "objectNumber": "SK-C-5",
+      "title": "Militia Company of District II under the Command of Captain Frans Banninck Cocq, Known as the ‘Night Watch’",
+      "hasImage": true,
+      "principalOrFirstMaker": "Rembrandt Harmensz. van Rijn",
+      "longTitle": "Militia Company of District II under the Command of Captain Frans Banninck Cocq, Known as the ‘Night Watch’, Rembrandt Harmensz. van Rijn, 1642",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "3ae88fe0-021c-41ae-a4ce-cc70b7bc6295",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 100,
+        "width": 2500,
+        "height": 2034,
+        "url": "http://lh6.ggpht.com/ZYWwML8mVFonXzbmg2rQBulNuCSr3rAaf5ppNcUc2Id8qXqudDL1NSYxaqjEXyDLSbeNFzOHRu0H7rbIws0Js4d7s_M=s0"
+      },
+      "headerImage": {
+        "guid": "29a2a516-f1d2-4713-9cbd-7a4458026057",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh3.ggpht.com/rvCc4t2BWHAgDlzyiPlp1sBhc8ju0aSsu2HxR8rN_ZVPBcujP94pukbmF3Blmhi-GW5cx1_YsYYCDMTPePocwM6d2vk=s0"
+      },
+      "productionPlaces": [
+        "Amsterdam"
+      ]
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/SK-C-216",
+        "web": "https://www.rijksmuseum.nl/en/collection/SK-C-216"
+      },
+      "id": "en-SK-C-216",
+      "objectNumber": "SK-C-216",
+      "title": "Portrait of a Couple as Isaac and Rebecca, known as ‘The Jewish Bride’",
+      "hasImage": true,
+      "principalOrFirstMaker": "Rembrandt Harmensz. van Rijn",
+      "longTitle": "Portrait of a Couple as Isaac and Rebecca, known as ‘The Jewish Bride’, Rembrandt Harmensz. van Rijn, c. 1665 - c. 1669",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "bc40866f-c2cc-47c4-9344-bb1bb7608df9",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 24,
+        "width": 3000,
+        "height": 2196,
+        "url": "http://lh5.ggpht.com/H-KfOaNgW2an_g0kODWKua5BELckMTr7zauQZCbnOZ69fyNlr67uavKaDmvSawg8j6TB88abmtAjNbcMjbOdU94zuzM=s0"
+      },
+      "headerImage": {
+        "guid": "10911bfe-4e23-4c3a-95f7-515609f4d711",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh3.ggpht.com/4sKkXwVRNYaATP5n3wG3DOC3dXOpayQ3feGLebuJHLEdayNP2GtXMMhfWRQsrbyeeswfvwgqs9faNOaPkIiM76Y_Htw=s0"
+      },
+      "productionPlaces": []
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/SK-C-211",
+        "web": "https://www.rijksmuseum.nl/en/collection/SK-C-211"
+      },
+      "id": "en-SK-C-211",
+      "objectNumber": "SK-C-211",
+      "title": "The Windmill at Wijk bij Duurstede",
+      "hasImage": true,
+      "principalOrFirstMaker": "Jacob Isaacksz. van Ruisdael",
+      "longTitle": "The Windmill at Wijk bij Duurstede, Jacob Isaacksz. van Ruisdael, c. 1668 - c. 1670",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "61d85969-9cb6-41ce-b216-0f19e06e198a",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 2880,
+        "height": 2376,
+        "url": "http://lh6.ggpht.com/1gH99j2GD85SW4r3CA18uwTDuRioMYTNZlH5N2xuZsbh_4QUnzxettm6WqCsLa_ciGCzhWwLzF35QtHEpz4M9LWv_yvl=s0"
+      },
+      "headerImage": {
+        "guid": "a47bcb3d-ce7e-42f4-a7b9-e9f6efcc397d",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh5.ggpht.com/MAQKSR6zapG415xvqtN_ViNtHiwn7fb-Bbkp9uzlIv7KfmtD0xOqz7S_U-wC6cOQigfmIiHnI4QF3O256DIPHz8q8g=s0"
+      },
+      "productionPlaces": []
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/SK-A-1718",
+        "web": "https://www.rijksmuseum.nl/en/collection/SK-A-1718"
+      },
+      "id": "en-SK-A-1718",
+      "objectNumber": "SK-A-1718",
+      "title": "Winter Landscape with Ice Skaters",
+      "hasImage": true,
+      "principalOrFirstMaker": "Hendrick Avercamp",
+      "longTitle": "Winter Landscape with Ice Skaters, Hendrick Avercamp, c. 1608",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "be0a6264-4e7a-4658-9954-a80727d7b5cb",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 2928,
+        "height": 1691,
+        "url": "http://lh5.ggpht.com/fnW9Pyd4QvVnz1NmbiU2j1v5gRHgtmjEcmNGAhgqJ0nD9oQSmi8Iddje-Da6ozlYLI9QP32OASS7A3qT9izEYTmcDA=s0"
+      },
+      "headerImage": {
+        "guid": "c3d4cbca-a7c2-4341-812d-78773acdcb6f",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1929,
+        "height": 462,
+        "url": "http://lh4.ggpht.com/j7dkfN6YZzrvXzQ4Soru2sCsLN2A7-XR8eUM24qok9gNOp6-yTGqLsfV-S3PY-Za_8Pm2lJF30RjuaG1kPex5todmQ=s0"
+      },
+      "productionPlaces": []
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/SK-A-799",
+        "web": "https://www.rijksmuseum.nl/en/collection/SK-A-799"
+      },
+      "id": "en-SK-A-799",
+      "objectNumber": "SK-A-799",
+      "title": "Floral Still Life",
+      "hasImage": true,
+      "principalOrFirstMaker": "Hans Bollongier",
+      "longTitle": "Floral Still Life, Hans Bollongier, 1639",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "c69fefa7-3a09-4c41-a3f9-ad931879e185",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1904,
+        "height": 2424,
+        "url": "http://lh4.ggpht.com/y-B7FwRdKdFzKCrrAzgvnGOW1e1-z0w2sfJqjVWuqDt_Du6s8q5Y2_bAyjk_SVTPDWb9ZLqwMCq3FemdsGHJkf7tdC46=s0"
+      },
+      "headerImage": {
+        "guid": "d2923a9d-6d5c-46d6-8c7e-27b93438fcb0",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh6.ggpht.com/rtJKMxXN4aE3zc70Pw1a9yLdxZUV0VzSvfAVA2R3hPbGnZ4xzwPwMIiaRmiMCmw965BN48XPZgJA4n_5VLqfwTasvQo=s0"
+      },
+      "productionPlaces": []
+    },
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/en/collection/SK-A-2963",
+        "web": "https://www.rijksmuseum.nl/en/collection/SK-A-2963"
+      },
+      "id": "en-SK-A-2963",
+      "objectNumber": "SK-A-2963",
+      "title": "Portrait of Don Ramón Satué",
+      "hasImage": true,
+      "principalOrFirstMaker": "Francisco de Goya",
+      "longTitle": "Portrait of Don Ramón Satué, Francisco de Goya, 1823",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "13cd38ae-6d4c-4bd8-bf77-64d8428b12ed",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 19,
+        "width": 2131,
+        "height": 2708,
+        "url": "http://lh4.ggpht.com/wyy5JOPbVx1wQ9ax57OmfOz4kooWGwaW7iX7OS5VkveFRTxLQ6J73t4bunTkrerA9nvlgUIyutax_0KzR9kbhKOesMY=s0"
+      },
+      "headerImage": {
+        "guid": "ddb422b2-6ff0-48dc-92b1-107eccd444cb",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh4.ggpht.com/P0N6CiLbiNtPLTRtnJLdmGFBGrgvAnhgoZlSt_O1OLMTDZiFk6Q9Xy86f82bTSugP6cbfiyqshjt6y4Fptg-u6YQ0pY=s0"
+      },
+      "productionPlaces": []
+    }
+  ]
+}

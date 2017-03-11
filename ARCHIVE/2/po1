@@ -1,0 +1,54 @@
+#
+API_KEY="3yLwaBE9"
+#
+# The following request will fetch all of the public data of The Nightwatch, in Dutch using the format JSON:
+#
+#curl -v -i -X GET https://www.rijksmuseum.nl/api/en/collection/sk-c-5?key=$API_KEY&format=json
+
+#
+# collection
+#
+
+# curl -o ab.json -v -i https://www.rijksmuseum.nl/api/en/collection?key=$API_KEY&format=json
+
+
+# curl -o p0.txt -v -i https://www.rijksmuseum.nl/api/en/collection?key=3yLwaBE9&format=json&p=0
+# curl -o p1.txt -v -i https://www.rijksmuseum.nl/api/en/collection?key=3yLwaBE9&format=json&p=1
+
+#
+#  item
+#
+curl -o item1.txt -v -i https://www.rijksmuseum.nl/api/en/collection/BK-18305?key=3yLwaBE9&format=json
+
+
+#
+# gets events for a given day
+#
+# curl -v -i https://www.rijksmuseum.nl/api/en/agenda/2013-10-18?key=$API_KEY&format=json
+# curl -v -i https://www.rijksmuseum.nl/api/en/agenda/2016-11-21?key=$API_KEY&format=json
+
+#
+# returns html
+#
+# curl -v -i https://www.rijksmuseum.nl/api/en/agenda?key=$API_KEY&format=json
+
+#
+#
+#
+
+#
+# GET /api/[culture]/agenda/[date]/exposition/[exposition-id]/availability/[period-id]
+#
+# fails, hangs...
+#
+# curl -o a9.html-v -i https://www.rijksmuseum.nl/api/en/agenda/exposition/availability?key=$API_KEY&format=json
+#
+#
+# calendar availability
+#
+# curl -v -i https://www.rijksmuseum.nl/api/en/agenda/2016-11-22/exposition/f83894c9-6d13-4047-a759-9ba98138e417/availability/e7833460-9952-4f11-b7ad-b7cd28b4c480?key=$API_KEY&format=json
+#
+
+
+
+

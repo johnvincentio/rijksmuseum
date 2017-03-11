@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <title></title>
+
+        <style>
+        </style>
+        <link rel="stylesheet" href="../source/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+<div>test 101</div>
+<div class="js--images"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../source/jquery.fancybox.js"></script>
+        <script src="app.js"></script>
+        <script>
+$(document).ready(function() {
+/*
+also may need to use:
+<a class="fancybox fancybox.image" href="{{30}}" title="{{31}}">\
+        <img class="img-responsive" src="{{2}}" alt="{{3}}">\
+    </a>\
+*/
+    $(".fancybox").fancybox({
+        type: 'image',
+        openEffect	: 'none',
+        closeEffect	: 'none'
+    });
+});
+        </script>
+    </body>
+</html>

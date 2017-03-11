@@ -1,0 +1,152 @@
+
+@import "_variables.scss";
+@import "_nav.scss";
+@import "_mixins.scss";
+@import "_placeholders.scss";
+@import "_functions.scss";
+
+#header {
+    height: $header-height;
+}
+h1 {
+   font-size: $header-size;
+   color: $header-color;
+}
+
+h2 {
+   font-size: $header-size - 7px;
+   color: $header-color;
+}
+
+a {
+    color: $link-color;
+}
+
+p {
+    width: 200px;
+    height: 50px;
+    @extend %textOverflow;
+    @include horizontalGradient(#FFC, #000);
+    clear: left;
+    @extend %center;
+}
+
+ .image {
+ 
+     float: left;
+
+     background-color: #ececec;
+     border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+
+     @media (max-width: 640px)
+     {
+         @include generateRow(2, 8%);
+     }
+     @media (min-width: 641px) and (max-width: 1200px)
+     {
+         @include generateRow(4, 3%);
+     }
+     @media (min-width: 1201px)
+     {
+         @include generateRow(5, 2%);
+     }
+
+     box-sizing: border-box;
+     img
+     {
+         width: 100%;
+     }
+     .image-description
+     {
+         color: #555;
+     }
+ }
+ 
+@include small-box(red);
+@include small-box(pink);
+@include small-box(yellow);
+@include small-box(black);
+
+// Lists
+
+$header-list: h1 h2 h3 h4 h5 h6 'something-else';
+@each $current-header in $header-list {
+    $i: index($header-list, $current-header) + 2;
+    #{$current-header} {
+        font-size: 55px - $i * 3;
+    }
+}
+
+// looping h1 to h7, changing the font-size.
+// use interplotation of string
+
+//@for $i from 1 to 7 {
+//    h#{$i} {
+//        font-size: 55px - $i * 4;
+//    }
+//}
+
+
+/* Mobile defaults */
+
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+    width: 100%;
+}
+
+
+/* Non-mobile, grid */
+
+@media only screen and (min-width: 640px) {
+
+}
+
+/*
+@media only screen and (orientation: landscape) {
+*/
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {/*--- Mobile portrait ---*/}
+@media only screen and (min-width : 480px) and (max-width : 595px) {/*--- Mobile landscape ---*/}
+@media only screen and (min-width : 595px) and (max-width : 690px) {/*--- Small tablet portrait ---*/}
+@media only screen and (min-width : 690px) and (max-width : 800px) {/*--- Tablet portrait ---*/}
+@media only screen and (min-width : 800px) and (max-width : 1024px) {/*--- Small tablet landscape ---*/}
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {/*--- Tablet landscape --- */}
+@media only screen and (min-width : 1224px) {/*--- Laptop --- */}
+@media only screen and (min-width : 1824px) {/*--- Large Screen --- */}
+
+
+/* Big tablet to 1200px (widths smaller than 1140px row) */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-color: darkorange;
+    }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    body {
+        background-color: chartreuse;
+    }
+}
+
+/* Small phones to small tablets; from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: beige;
+    }
+}
+
+/* Small phones from 0 to 480px  */
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: aqua;
+    }
+}

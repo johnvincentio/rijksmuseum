@@ -1,0 +1,131 @@
+.collection .outer-box .box .caption h2, .collection .outer-box .box .caption p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ----------------------------------- */
+/* Basic setup */
+/* ----------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* ----------------------------------- */
+/* Main Image Section */
+/* ----------------------------------- */
+.jumbotron {
+  min-width: 100%;
+  height: 500px;
+  background: url("http://lh4.ggpht.com/w-9ruGKvMxcvzBn4hhRICkisIP5U05xD2bNthIWO8hb62h24zcMgj76LTdLA15sS8CFh9AQHioRLgNisR0TnftamgGmY=s0") center;
+  background-size: cover;
+}
+.jumbotron:hover {
+  cursor: pointer;
+}
+
+#my-brand {
+  font-size: 26px;
+  font-weight: 700;
+  color: #625655;
+}
+
+/* ----------------------------------- */
+/* Collection section */
+/* ----------------------------------- */
+.collection {
+  background-color: #e4e1e1;
+}
+.collection .outer-box {
+  margin-top: 20px;
+}
+.collection .outer-box .box {
+  margin: 5px;
+}
+.collection .outer-box .box img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  vertical-align: top;
+}
+.collection .outer-box .box img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.collection .outer-box .box .caption h2 {
+  margin: 0;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.collection .outer-box .box .caption p {
+  margin: 0;
+  padding-top: 6px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+/* ----------------------------------- */
+/* Details section */
+/* ----------------------------------- */
+.details .outer-box {
+  margin-top: 60px;
+}
+
+/* ----------------------------------- */
+/* Responsive */
+/* ----------------------------------- */
+/* Non-mobile, grid */
+/*
+@media only screen and (orientation: landscape) {
+*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /*--- Mobile portrait ---*/
+  #my-brand {
+    font-size: 22px;
+  }
+
+  .jumbotron {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 595px) {
+  /*--- Mobile landscape ---*/
+}
+@media only screen and (min-width: 595px) and (max-width: 690px) {
+  /*--- Small tablet portrait ---*/
+}
+@media only screen and (min-width: 690px) and (max-width: 800px) {
+  /*--- Tablet portrait ---*/
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  /*--- Small tablet landscape ---*/
+}
+@media only screen and (min-width: 1024px) and (max-width: 1224px) {
+  /*--- Tablet landscape --- */
+}
+@media only screen and (min-width: 1224px) {
+  /*--- Laptop --- */
+}
+@media only screen and (min-width: 1824px) {
+  /*--- Large Screen --- */
+}
+/* Big tablet to 1200px (widths smaller than 1140px row) */
+/* Small tablet to big tablet: from 768px to 1023px */
+/* Small phones to small tablets; from 481px to 767px */
+/* Small phones from 0 to 480px  */
+
+/*# sourceMappingURL=main.css.map */
