@@ -9,9 +9,9 @@ APP.views.collection = {
     getTemplate: function() {
         return '\
     <div class="outer-box col-xs-12 col-sm-6 col-md-4 col-lg-3">\
-        <figure class="box js--select-item" data-item-id="{{1}}">\
+        <figure class="js--select-item" data-item-id="{{1}}">\
             <div><img src="{{5}}" alt="{{6}}"></div>\
-            <figcaption class="caption">\
+            <figcaption>\
                 <h2 class="text-center">{{2}}</h2>\
                 <p class="text-center">{{3}}</p>\
             </figcaption>\

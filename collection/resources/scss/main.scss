@@ -82,23 +82,50 @@ body {
 /* Collection section */
 /* ----------------------------------- */
 
+/*
+<div class="outer-box col-xs-12 col-sm-6 col-md-4 col-lg-3">\
+    <figure class="box js--select-item" data-item-id="{{1}}">\
+        <div><img src="{{5}}" alt="{{6}}"></div>\
+        <figcaption class="caption">\
+            <h2 class="text-center">{{2}}</h2>\
+            <p class="text-center">{{3}}</p>\
+        </figcaption>\
+    </figure>\
+</div>';
+*/
+
 .collection {
     background-color: $background-color;
+    text-align: center;    // center images
     .outer-box {
-        margin-top: 20px;
-        .box {
-            margin: 5px;
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 200px;
-                vertical-align: top;
-                &:hover {
-                    @include scale(1.05);
-                    cursor: pointer;
+        margin-top: 20px;    // provide some space at the top of the image
+        figure {        // size is set by bootstrap grid
+            padding: 0;
+            margin: 0 auto;
+            div {
+                height: 300px;
+                //width: 400px;        // usually, set the width
+                width: 100%;            // as grid size is set in figure
+                overflow: hidden;    // hide what cannot be shown
+                text-align: center;
+                margin: 0 auto;
+
+                img {
+                    margin: 0 auto;
+                    text-align: center;
+                    height: 100%;    // use all of the height, determined by containing div
+                    width: auto;
+//                    max-width: 350px;    // not needed for this app
+                    object-fit: cover;
+                    vertical-align: top;
+                    &:hover {
+                        @include scale(1.05);
+                        cursor: pointer;
+                    }
                 }
             }
-            .caption {
+
+            figcaption {
                 h2 {
                     margin: 0;
                     padding-top: 10px;
