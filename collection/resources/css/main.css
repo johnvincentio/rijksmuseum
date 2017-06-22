@@ -46,27 +46,49 @@ body {
 /* ----------------------------------- */
 /* Collection section */
 /* ----------------------------------- */
+/*
+<div class="outer-box col-xs-12 col-sm-6 col-md-4 col-lg-3">\
+    <figure class="box js--select-item" data-item-id="{{1}}">\
+        <div><img src="{{5}}" alt="{{6}}"></div>\
+        <figcaption class="caption">\
+            <h2 class="text-center">{{2}}</h2>\
+            <p class="text-center">{{3}}</p>\
+        </figcaption>\
+    </figure>\
+</div>';
+*/
 .collection {
   background-color: #e4e1e1;
+  text-align: center;
 }
 .collection .outer-box {
   margin-top: 20px;
 }
-.collection .outer-box .box {
-  margin: 5px;
+.collection .outer-box figure {
+  padding: 0;
+  margin: 0 auto;
 }
-.collection .outer-box .box img {
-  object-fit: cover;
+.collection .outer-box figure div {
+  height: 300px;
   width: 100%;
-  height: 200px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+.collection .outer-box figure div img {
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
   vertical-align: top;
 }
-.collection .outer-box .box img:hover {
+.collection .outer-box figure div img:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   cursor: pointer;
 }
-.collection .outer-box .box .caption h2 {
+.collection .outer-box figure figcaption h2 {
   margin: 0;
   padding-top: 10px;
   font-weight: 400;
@@ -75,7 +97,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.collection .outer-box .box .caption p {
+.collection .outer-box figure figcaption p {
   margin: 0;
   padding-top: 6px;
   font-weight: 700;
