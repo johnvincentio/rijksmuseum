@@ -93,7 +93,10 @@ body {
     </figure>\
 </div>';
 */
+/*
+https://stackoverflow.com/questions/14562457/center-oversized-image-in-div
 
+*/
 .collection {
     background-color: $background-color;
     text-align: center;    // center images
@@ -101,26 +104,24 @@ body {
         margin-top: 20px;    // provide some space at the top of the image
         figure {        // size is set by bootstrap grid
             padding: 0;
-            margin: 0 auto;
+            margin: 0;
             div {
                 height: 300px;
                 //width: 400px;        // usually, set the width
                 width: 100%;            // as grid size is set in figure
                 overflow: hidden;    // hide what cannot be shown
-                text-align: center;
-                margin: 0 auto;
 
                 img {
-                    margin: 0 auto;
-                    text-align: center;
                     height: 100%;    // use all of the height, determined by containing div
-                    width: auto;
-//                    max-width: 350px;    // not needed for this app
-                    object-fit: cover;
-                    vertical-align: top;
+                    width: auto;    // width is based on the image height
+
+                    margin-left: 50%;    // shift right 50% of the parent
+                    transform: translateX(-50%);    // shift left 50% of this element
+
                     &:hover {
-                        @include scale(1.05);
+//                        @include scale(1.05);    // fails when using transform on the parent
                         cursor: pointer;
+                        height: 102%;        // expand vertically as height is fixed.
                     }
                 }
             }
