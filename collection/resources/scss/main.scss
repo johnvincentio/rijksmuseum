@@ -1,4 +1,3 @@
-
 /* ----------------------------------- */
 /* Variables */
 /* ----------------------------------- */
@@ -9,32 +8,32 @@ $brand-color: #625655;
 
 $grid-color: $brand-color;
 
-$back-image: "http://lh4.ggpht.com/w-9ruGKvMxcvzBn4hhRICkisIP5U05xD2bNthIWO8hb62h24zcMgj76LTdLA15sS8CFh9AQHioRLgNisR0TnftamgGmY=s0";
+$back-image: 'http://lh4.ggpht.com/w-9ruGKvMxcvzBn4hhRICkisIP5U05xD2bNthIWO8hb62h24zcMgj76LTdLA15sS8CFh9AQHioRLgNisR0TnftamgGmY=s0';
 
 /* ----------------------------------- */
 /* Mixins */
 /* ----------------------------------- */
 
 @mixin text-truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 @mixin clearfix() {
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }
 
 @mixin scale($scale) {
-    -webkit-transform: scale($scale);
-    transform: scale($scale);
+	-webkit-transform: scale($scale);
+	transform: scale($scale);
 }
 
 /* ----------------------------------- */
@@ -42,19 +41,19 @@ $back-image: "http://lh4.ggpht.com/w-9ruGKvMxcvzBn4hhRICkisIP5U05xD2bNthIWO8hb62
 /* ----------------------------------- */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html,
 body {
-    background-color: $color-white;
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+	background-color: $color-white;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
 }
 
 /* ----------------------------------- */
@@ -62,20 +61,20 @@ body {
 /* ----------------------------------- */
 
 .jumbotron {
-    min-width: 100%;
-    height: 500px;
-    background: url($back-image) center;
-    background-size: cover;
-    &:hover {
-        cursor: pointer;
-    }
-    border-radius: 0 !important;
+	min-width: 100%;
+	height: 500px;
+	background: url($back-image) center;
+	background-size: cover;
+	&:hover {
+		cursor: pointer;
+	}
+	border-radius: 0 !important;
 }
 
 #my-brand {
-    font-size: 26px;
-    font-weight: 500;
-    color: $brand-color;
+	font-size: 26px;
+	font-weight: 500;
+	color: $brand-color;
 }
 
 /* ----------------------------------- */
@@ -98,52 +97,53 @@ https://stackoverflow.com/questions/14562457/center-oversized-image-in-div
 
 */
 .collection {
-    background-color: $background-color;
-    text-align: center;    // center images
-    .outer-box {
-        margin-top: 20px;    // provide some space at the top of the image
-        figure {        // size is set by bootstrap grid
-            padding: 0;
-            margin: 0;
-            div {
-                height: 300px;
-                //width: 400px;        // usually, set the width
-                width: 100%;            // as grid size is set in figure
-                overflow: hidden;    // hide what cannot be shown
+	background-color: $background-color;
+	text-align: center; // center images
+	.outer-box {
+		margin-top: 20px; // provide some space at the top of the image
+		figure {
+			// size is set by bootstrap grid
+			padding: 0;
+			margin: 0;
+			div {
+				height: 300px;
+				//width: 400px;        // usually, set the width
+				width: 100%; // as grid size is set in figure
+				overflow: hidden; // hide what cannot be shown
 
-                img {
-                    height: 100%;    // use all of the height, determined by containing div
-                    width: auto;    // width is based on the image height
+				img {
+					height: 100%; // use all of the height, determined by containing div
+					width: auto; // width is based on the image height
 
-                    margin-left: 50%;    // shift right 50% of the parent
-                    transform: translateX(-50%);    // shift left 50% of this element
+					margin-left: 50%; // shift right 50% of the parent
+					transform: translateX(-50%); // shift left 50% of this element
 
-                    &:hover {
-//                        @include scale(1.05);    // fails when using transform on the parent
-                        cursor: pointer;
-                        height: 102%;        // expand vertically as height is fixed.
-                    }
-                }
-            }
+					&:hover {
+						//                        @include scale(1.05);    // fails when using transform on the parent
+						cursor: pointer;
+						height: 102%; // expand vertically as height is fixed.
+					}
+				}
+			}
 
-            figcaption {
-                h2 {
-                    margin: 0;
-                    padding-top: 10px;
-                    font-weight: 400;
-                    font-size: 15px;
-                    @include text-truncate;
-                }
-                p {
-                    margin: 0;
-                    padding-top: 6px;
-                    font-weight: 700;
-                    font-size: 17px;
-                    @include text-truncate;
-                }
-            }
-        }
-    }
+			figcaption {
+				h2 {
+					margin: 0;
+					padding-top: 10px;
+					font-weight: 400;
+					font-size: 15px;
+					@include text-truncate;
+				}
+				p {
+					margin: 0;
+					padding-top: 6px;
+					font-weight: 700;
+					font-size: 17px;
+					@include text-truncate;
+				}
+			}
+		}
+	}
 }
 
 /* ----------------------------------- */
@@ -151,40 +151,40 @@ https://stackoverflow.com/questions/14562457/center-oversized-image-in-div
 /* ----------------------------------- */
 
 .details .outer-box {
-    margin-top: 80px;
-    img {
-        &:hover {
-            @include scale(1.05);
-            cursor: pointer;
-        }
-    }
-    .art-header {
-        h2 {
-            font-size: 28px;
-            margin-top: 40px;
-        }
-        p {
-            font-size: 18px;
-            font-weight: 400;
-            margin-top: 25px;
-//            padding: 0 5px;
-        }
-    }
-    .art-details {
-        margin-top: 20px;
-        font-size: 18px;
-        p {
-            line-height: 20px;
-        }
-        .artist {
-            margin-top: 35px;
-            .artist-name {
-                font-size: 28px;
-                font-weight: 500;
-                margin-bottom: 16px;
-            }
-        }
-    }
+	margin-top: 80px;
+	img {
+		&:hover {
+			@include scale(1.05);
+			cursor: pointer;
+		}
+	}
+	.art-header {
+		h2 {
+			font-size: 28px;
+			margin-top: 40px;
+		}
+		p {
+			font-size: 18px;
+			font-weight: 400;
+			margin-top: 25px;
+			//            padding: 0 5px;
+		}
+	}
+	.art-details {
+		margin-top: 20px;
+		font-size: 18px;
+		p {
+			line-height: 20px;
+		}
+		.artist {
+			margin-top: 35px;
+			.artist-name {
+				font-size: 28px;
+				font-weight: 500;
+				margin-bottom: 16px;
+			}
+		}
+	}
 }
 
 /* ----------------------------------- */
@@ -192,82 +192,94 @@ https://stackoverflow.com/questions/14562457/center-oversized-image-in-div
 /* ----------------------------------- */
 
 .events {
-    div {
-        margin-bottom: 25px;
-    }
-    .tour-description {
-        padding-top: 15px;
-        padding-bottom: 10px;
-        a {
-            padding-left: 10px;
-        }
-
-    }
-    .tour-time {
-        a {
-            padding-left: 30px;
-        }
-    }
+	div {
+		margin-bottom: 25px;
+	}
+	.tour-description {
+		padding-top: 15px;
+		padding-bottom: 10px;
+		a {
+			padding-left: 10px;
+		}
+	}
+	.tour-time {
+		a {
+			padding-left: 30px;
+		}
+	}
 }
 
 /* ----------------------------------- */
 /* Responsive */
 /* ----------------------------------- */
 
-
 @media only screen and (max-width: 640px) {
-    .events .tour-time a {
-        display: block;
-        padding-left: 0;
-    }
+	.events .tour-time a {
+		display: block;
+		padding-left: 0;
+	}
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {/*--- Mobile portrait ---*/
-    #my-brand {
-        font-size: 22px;
-    }
-    .jumbotron {
-        height: 300px;
-    }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	/*--- Mobile portrait ---*/
+	#my-brand {
+		font-size: 22px;
+	}
+	.jumbotron {
+		height: 300px;
+	}
 }
 
-@media only screen and (min-width : 480px) and (max-width : 595px) {/*--- Mobile landscape ---*/}
-@media only screen and (min-width : 595px) and (max-width : 690px) {/*--- Small tablet portrait ---*/}
-@media only screen and (min-width : 690px) and (max-width : 800px) {/*--- Tablet portrait ---*/}
-@media only screen and (min-width : 800px) and (max-width : 1024px) {/*--- Small tablet landscape ---*/}
-@media only screen and (min-width : 1024px) and (max-width : 1224px) {/*--- Tablet landscape --- */}
-@media only screen and (min-width : 1224px) {/*--- Laptop --- */}
-@media only screen and (min-width : 1824px) {/*--- Large Screen --- */}
-
+@media only screen and (min-width: 480px) and (max-width: 595px) {
+	/*--- Mobile landscape ---*/
+}
+@media only screen and (min-width: 595px) and (max-width: 690px) {
+	/*--- Small tablet portrait ---*/
+}
+@media only screen and (min-width: 690px) and (max-width: 800px) {
+	/*--- Tablet portrait ---*/
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+	/*--- Small tablet landscape ---*/
+}
+@media only screen and (min-width: 1024px) and (max-width: 1224px) {
+	/*--- Tablet landscape --- */
+}
+@media only screen and (min-width: 1224px) {
+	/*--- Laptop --- */
+}
+@media only screen and (min-width: 1824px) {
+	/*--- Large Screen --- */
+}
 
 /* Big tablet to 1200px (widths smaller than 1140px row) */
 
 @media only screen and (max-width: 1200px) {
-    body {
-//        background-color: darkorange;
-    }
+	body {
+		//        background-color: darkorange;
+	}
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
 
 @media only screen and (max-width: 1023px) {
-    body {
-//        background-color: chartreuse;
-    }
+	body {
+		//        background-color: chartreuse;
+	}
 }
 
 /* Small phones to small tablets; from 481px to 767px */
 
 @media only screen and (max-width: 767px) {
-    body {
-//        background-color: beige;
-    }
+	body {
+		//        background-color: beige;
+	}
 }
 
 /* Small phones from 0 to 480px  */
 
 @media only screen and (max-width: 480px) {
-    body {
-//        background-color: aqua;
-    }
+	body {
+		//        background-color: aqua;
+	}
 }
