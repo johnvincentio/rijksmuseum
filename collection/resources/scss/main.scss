@@ -119,7 +119,7 @@ https://stackoverflow.com/questions/14562457/center-oversized-image-in-div
 					transform: translateX(-50%); // shift left 50% of this element
 
 					&:hover {
-						//                        @include scale(1.05);    // fails when using transform on the parent
+						// @include scale(1.05);    // fails when using transform on the parent
 						cursor: pointer;
 						height: 102%; // expand vertically as height is fixed.
 					}
@@ -167,7 +167,6 @@ https://stackoverflow.com/questions/14562457/center-oversized-image-in-div
 			font-size: 18px;
 			font-weight: 400;
 			margin-top: 25px;
-			//            padding: 0 5px;
 		}
 	}
 	.art-details {
