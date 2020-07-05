@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-OUTFILE=robots.txt
+OUTFILE=collection/robots.txt
 #
 MYHOST="https://www.rijksmuseum.johnvincent.io"
 #echo "MYHOST $MYHOST"

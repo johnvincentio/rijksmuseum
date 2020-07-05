@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-OUTFILE=sitemap.xml
+OUTFILE=collection/sitemap.xml
 #
 addFile() {
     CURFILE=$1;
