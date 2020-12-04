@@ -16,7 +16,7 @@
 html,
 body {
   background-color: #fff;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
@@ -29,7 +29,7 @@ body {
 .jumbotron {
   min-width: 100%;
   height: 500px;
-  background: url("http://lh4.ggpht.com/w-9ruGKvMxcvzBn4hhRICkisIP5U05xD2bNthIWO8hb62h24zcMgj76LTdLA15sS8CFh9AQHioRLgNisR0TnftamgGmY=s0") center;
+  background: url("https://www.images.johnvincent.io/rijksmuseum/background.jpg") center;
   background-size: cover;
   border-radius: 0 !important;
 }
